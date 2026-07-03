@@ -134,4 +134,4 @@ Commercial use, resale, or redistribution in any product requires explicit writt
 
 <div align="center">
 
-Built with ❤️ by **[Next Builder](https://youtube.com/@next.builder)**
+Built with ❤️ by **[Next Builder](https://youtube.com/@nextbuilderio)**
