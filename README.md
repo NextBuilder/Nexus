@@ -2,7 +2,7 @@
 
 <br/>
 
-<img src="Images/NX.png" width="900"/>
+<img src="Circuit%20Diagram/NX.png" width="900"/>
 
 <br/><br/>
 
@@ -24,8 +24,6 @@
 
 </div>
 
----
-
 <br/>
 
 ## 🕒 Overview
@@ -35,10 +33,6 @@ In today's world, even something as simple as checking the time often leads to u
 Powered by the **Waveshare ESP32-C3**, Nexus connects to Wi-Fi and synchronizes with **Network Time Protocol (NTP)** servers to keep accurate, real-time date and time — with no traditional RTC module and no manual adjustments required. Time is shown in **12-hour (HH:MM AM/PM)** format, and the date in **DD/MM/YYYY** format, on a crisp **0.96" OLED display**.
 
 The enclosure was designed from scratch in **Autodesk Fusion 360**, giving Nexus a clean, product-like appearance that blends naturally into any desk setup. This repository contains everything needed to build your own: complete firmware source, CAD files, STL models, and wiring diagrams.
-
-<br/>
-
----
 
 <br/>
 
@@ -54,22 +48,21 @@ The enclosure was designed from scratch in **Autodesk Fusion 360**, giving Nexus
 
 <br/>
 
----
-
 <br/>
 
-## ✨ Features
+## 🔩 Hardware Used
 
-- **Zero-touch time sync** — connects to Wi-Fi on boot and pulls accurate time from NTP servers, no RTC or coin-cell backup needed
-- **Distraction-free display** — shows only time and date, nothing else, on a compact 0.96" OLED
-- **12-hour time format** with AM/PM indicator, and DD/MM/YYYY date format
-- **Custom Fusion 360 enclosure** — compact, desk-friendly footprint designed for a clean, minimal look
-- **Fully open-source** — firmware, CAD, STL exports, and wiring diagrams all included for learning and customization
-- **Low part count** — built around a single Wi-Fi microcontroller and one display, keeping assembly simple
+<div align="center">
+<img src="Circuit%20Diagram/1.png" width="700"/>
+<br/><br/>
+  
+<sub>Components used to build Nexus</sub>
+  
+</div>
+
+Nexus keeps its parts list intentionally short — a **Waveshare ESP32-C3** handles Wi-Fi and processing, paired with a **0.96" OLED display** for output. The full wiring and circuit diagram is available in the [Circuit Diagram](https://github.com/NextBuilder/Nexus/tree/main/Circuit%20Diagram) folder of this repository.
 
 <br/>
-
----
 
 <br/>
 
@@ -82,8 +75,6 @@ The **Waveshare ESP32-C3** processes the received time data and continuously upd
 By combining Wi-Fi connectivity, NTP synchronization, and a clean, distraction-free interface, Nexus offers a simple, reliable way to keep track of time while helping you stay focused on your work.
 
 <br/>
-
----
 
 <br/>
 
@@ -108,8 +99,6 @@ All project resources, including firmware, CAD models, library configuration fil
 
 <br/>
 
----
-
 <br/>
 
 ## License
@@ -118,8 +107,6 @@ Open for **personal and educational use only.**
 Commercial use, resale, or redistribution in any product requires explicit written permission from the author.
 
 <br/>
-
----
 
 <br/>
 
