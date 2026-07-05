@@ -2,13 +2,13 @@
 
 <br/>
 
-<img src="Code/AS.png" width="900"/>
+<img src="Images/NX.png" width="900"/>
 
 <br/><br/>
 
 # Nexus
 
-**A Minimalist Wi-Fi Desk Clock — Designed for Focus**
+**A Tiny IoT Desk Clock — Minimal by Design, Always in Sync**
 
 <br/>
 
@@ -30,25 +30,11 @@
 
 ## 🕒 Overview
 
-In today's world, even something as simple as checking the time often leads to unnecessary distractions. We unlock our phones for a quick glance, only to be interrupted by notifications, messages, or social media. **Nexus** was created to solve this problem with a simple philosophy: display only the information that matters, so you can stay focused on what you're doing.
+In today's world, even something as simple as checking the time often leads to unnecessary distractions. We unlock our phones for a quick glance, only to be interrupted by notifications, messages, or social media. **Nexus** was built to solve exactly that problem, with a simple philosophy: display only the information that matters, so you can stay focused on what you're doing.
 
-Powered by the **Waveshare ESP32-C3**, Nexus automatically synchronizes with **Network Time Protocol (NTP)** servers over Wi-Fi to provide accurate, real-time date and time without the need for a traditional RTC module or manual adjustments. The current time is displayed in **12-hour (HH:MM AM/PM)** format, while the current date is shown in **DD/MM/YYYY** format on a crisp **0.96-inch OLED display**.
+Powered by the **Waveshare ESP32-C3**, Nexus connects to Wi-Fi and synchronizes with **Network Time Protocol (NTP)** servers to keep accurate, real-time date and time — with no traditional RTC module and no manual adjustments required. Time is shown in **12-hour (HH:MM AM/PM)** format, and the date in **DD/MM/YYYY** format, on a crisp **0.96" OLED display**.
 
-Designed from scratch in **Autodesk Fusion 360**, the compact enclosure gives Nexus a clean, modern appearance that blends naturally into any workspace. This repository includes everything needed to build your own Nexus, including the complete source code, CAD files, STL models, wiring diagram.
-
-<br/>
-
----
-
-<br/>
-
-## Live Display
-
-<div align="center">
-<img src="Images/62.png" width="740"/>
-<br/><br/>
-<sub>AirSense Live Dashboard — PM2.5 Dust · AQI · Temperature · Humidity · Air Quality · Feed Rate · Filter Health · Wi-Fi Status</sub>
-</div>
+The enclosure was designed from scratch in **Autodesk Fusion 360**, giving Nexus a clean, product-like appearance that blends naturally into any desk setup. This repository contains everything needed to build your own: complete firmware source, CAD files, STL models, and wiring diagrams.
 
 <br/>
 
@@ -56,11 +42,11 @@ Designed from scratch in **Autodesk Fusion 360**, the compact enclosure gives Ne
 
 <br/>
 
-## Demo
+## 🎬 Demo
 
 <div align="center">
-<a href="https://www.youtube.com/watch?v=aSXS77vslJU">
-<img src="https://img.youtube.com/vi/aSXS77vslJU/maxresdefault.jpg" width="800"/>
+<a href="https://www.youtube.com/watch?v=yCyvsM48buc">
+<img src="https://img.youtube.com/vi/yCyvsM48buc/maxresdefault.jpg" width="800"/>
 </a>
 <br/><br/>
 <sub>▶ Click to watch the full build and demo on YouTube</sub>
@@ -74,48 +60,53 @@ Designed from scratch in **Autodesk Fusion 360**, the compact enclosure gives Ne
 
 ## ✨ Features
 
-**Nexus** combines minimalist design, accurate Wi-Fi time synchronization, and open-source hardware into a compact desk clock built for distraction-free productivity. Powered by the **Waveshare ESP32-C3**, it automatically synchronizes with **Network Time Protocol (NTP)** servers over Wi-Fi, ensuring the displayed time is always accurate without requiring a traditional RTC module or manual adjustments. The crisp **0.96-inch OLED display** presents the current time in **12-hour (HH:MM AM/PM)** format along with the current date in **DD/MM/YYYY** format, providing only the information you need at a glance.
+- **Zero-touch time sync** — connects to Wi-Fi on boot and pulls accurate time from NTP servers, no RTC or coin-cell backup needed
+- **Distraction-free display** — shows only time and date, nothing else, on a compact 0.96" OLED
+- **12-hour time format** with AM/PM indicator, and DD/MM/YYYY date format
+- **Custom Fusion 360 enclosure** — compact, desk-friendly footprint designed for a clean, minimal look
+- **Fully open-source** — firmware, CAD, STL exports, and wiring diagrams all included for learning and customization
+- **Low part count** — built around a single Wi-Fi microcontroller and one display, keeping assembly simple
 
-Designed entirely in **Autodesk Fusion 360**, the custom enclosure delivers a clean, product-like appearance while keeping the electronics compact and easy to assemble. With complete source code, CAD files, STL models, circuit diagrams, and step-by-step documentation included, Nexus is a fully open-source project designed for learning, customization, and everyday use.
+<br/>
+
+---
+
+<br/>
+
+## ⚙️ How It Works
+
+Once powered on, **Nexus** connects to the configured Wi-Fi network and synchronizes the current date and time with a public **Network Time Protocol (NTP)** server. This removes the need for a traditional Real-Time Clock (RTC) module, so the displayed time stays accurate without manual adjustments or a backup battery.
+
+The **Waveshare ESP32-C3** processes the received time data and continuously updates the **0.96" OLED display**, showing the current date in **DD/MM/YYYY** format and the current time in **12-hour (HH:MM)** format with an **AM/PM** indicator. The display refreshes automatically, keeping the information accurate and easy to read at a glance.
+
+By combining Wi-Fi connectivity, NTP synchronization, and a clean, distraction-free interface, Nexus offers a simple, reliable way to keep track of time while helping you stay focused on your work.
 
 <br/>
 
 ---
 
-<br/>
-
-## How It Works
-
-Once powered on, **Nexus** connects to the configured Wi-Fi network and synchronizes the current date and time with a public **Network Time Protocol (NTP)** server. This eliminates the need for a traditional Real-Time Clock (RTC) module, ensuring that the displayed time remains accurate without manual adjustments or a backup battery.
-
-The **Waveshare ESP32-C3** processes the received time data and continuously updates the **0.96-inch OLED display**, showing the current date in **DD/MM/YYYY** format and the current time in **12-hour (HH:MM)** format along with an **AM/PM** indicator. The display refreshes automatically, keeping the information accurate and easy to read at all times.
-
-By combining Wi-Fi connectivity, NTP synchronization, and a clean, distraction-free interface, Nexus provides a simple yet reliable way to keep track of time while helping you stay focused on your work.
-
-<br/>
-
----
 <br/>
 
 ## 📚 Build Guide & Documentation
 
-Want to build your own **AirSense**? Complete step-by-step instructions, cloud configuration, wiring details, assembly photos, and testing procedures are available in the full written tutorials below.
+Want to build your own **Nexus**? Complete step-by-step instructions, wiring details, assembly photos, and testing procedures are available in the full written tutorials below.
 
-Whether you're a beginner exploring IoT and air quality monitoring or an experienced maker looking to customize the design, these guides will walk you through the entire build process from start to finish.
+Whether you're a beginner exploring IoT and embedded displays or an experienced maker looking to customize the design, these guides walk through the entire build process from start to finish.
 
 ### Tutorials & Project Documentation
 
-* **Instructables** https://www.instructables.com/Next-Time-a-Tiny-Desk-Clock/
+* **Instructables**
+  https://www.instructables.com/Next-Time-a-Tiny-Desk-Clock/
+
 * **Hackster.io**
-  https://www.hackster.io/NEXTBUILDER/airsense-the-smartest-diy-air-purifier-f775f8
+  https://www.hackster.io/NEXTBUILDER/nexus-a-tiny-iot-desk-clock-2d65fd
 
 * **Hackaday.io**
-  https://hackaday.io/project/205928-airsense-the-smartest-diy-air-purifier
-
-* **ElectronicWings**
-  https://www.electronicwings.com/users/NextBuilder/projects/6592/airsense---the-smartest-diy-air-purifier
+  https://hackaday.io/project/206091-nexus-a-tiny-iot-desk-clock
 
 All project resources, including firmware, CAD models, library configuration files, and circuit diagrams, are available in this GitHub repository.
+
+<br/>
 
 ---
 
@@ -135,3 +126,5 @@ Commercial use, resale, or redistribution in any product requires explicit writt
 <div align="center">
 
 Built with ❤️ by **[Next Builder](https://youtube.com/@nextbuilderio)**
+
+</div>
